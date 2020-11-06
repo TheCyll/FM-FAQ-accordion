@@ -20,9 +20,12 @@
 
 </head>
 <body>
+  <!-- this id functions as a parent for the most z-index high value image (the arroba box)-->
   <div id="arroba">
     <img id="arroba-box" src="images/illustration-box-desktop.svg" height="200" width="200"/>
   </div>
+
+  <!--This is the white box in the design-->
   <main id="principal">
     
     <div id="images">
@@ -41,8 +44,11 @@
 
       <ul>
         <li>
-          <div class="dropdown">             
-            <input type="checkbox" id="checkbox_toggle1">
+          <div class="dropdown">  
+            <!--I used the input type radio for the functionality :checked in css,
+            the only problem with this is that once you check one option you cannot
+            uncheked all of them, this can ve resolved with JS but my challenge was to do it without-->           
+            <input type="radio" id="checkbox_toggle1" name="all" value="checkbox_toggle1">
             <div class="flex-container">
               <label for="checkbox_toggle1">How many team members can I invite?</label>
               <img class="drop-arrow" src="images/icon-arrow-down.svg"/> 
@@ -52,8 +58,7 @@
         </li>
         <li>
           <div class="dropdown">
-            <input type="checkbox" id="checkbox_toggle2">
-            <div class="flex-container">
+            <input type="radio" id="checkbox_toggle2" name="all" value="checkbox_toggle2">            <div class="flex-container">
               <label for="checkbox_toggle2">What is the maximum file upload size?</label>
               <img class="drop-arrow" src="images/icon-arrow-down.svg"/>
             </div>
@@ -62,8 +67,7 @@
         </li>
         <li>
           <div class="dropdown">
-            <input type="checkbox" id="checkbox_toggle3" />
-            <div class="flex-container">
+            <input type="radio" id="checkbox_toggle3" name="all" value="checkbox_toggle3">            <div class="flex-container">
               <label for="checkbox_toggle3">How do I reset my password?</label>
               <img class="drop-arrow" src="images/icon-arrow-down.svg"/>
             </div>
@@ -72,8 +76,7 @@
         </li>
         <li>
           <div class="dropdown">
-            <input type="checkbox" id="checkbox_toggle4">
-            <div class="flex-container">
+            <input type="radio" id="checkbox_toggle4" name="all" value="checkbox_toggle4">            <div class="flex-container">
               <label for="checkbox_toggle4">Can I cancel my subscription?</label>
               <img class="drop-arrow" src="images/icon-arrow-down.svg"/>
             </div>
@@ -82,8 +85,7 @@
         </li>
         <li>
           <div class="dropdown">
-            <input type="checkbox" id="checkbox_toggle5">
-            <div class="flex-container">
+            <input type="radio" id="checkbox_toggle5" name="all" value="checkbox_toggle5">            <div class="flex-container">
               <label for="checkbox_toggle5">Do you provide additional support?</label>
               <img class="drop-arrow" src="images/icon-arrow-down.svg"/>
             </div>
@@ -97,7 +99,7 @@
   </main>
 
 
-
+  <!--My attribution-->
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Hazel Gallegos</a>.

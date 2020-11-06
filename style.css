@@ -1,7 +1,6 @@
 :root {
     /** Fuentes **/ 
-    --principalFont: 'Kumbh Sans', sans-serif;
-     
+    --principalFont: 'Kumbh Sans', sans-serif;     
  
       
     /** Colores **/
@@ -14,7 +13,7 @@
     --black: #000000;
  }
  
- /* Configuracion inicial */
+ /* Initial setup */
  html{
      box-sizing: border-box;
      font-size: 62.5%; /*10px=1rem*/
@@ -61,8 +60,13 @@ padding: 0;
     list-style: none;
  }
 
-/* Contenido */
-
+/* Main content */
+#arroba{
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
 #principal{  
     margin-top: 30px; 
     overflow: hidden;     
@@ -76,15 +80,10 @@ padding: 0;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 0rem 1.5rem 4rem 0rem  hsl(237, 12%, 33%);     
 }
+
 #images{
     position: relative;    
     max-height: 38rem;
-}
-#overflow{
-    position: relative;
-    overflow: hidden;  
-    width: auto;
-    height: 40rem;   
 }
 #woman-online{
     position: relative;
@@ -102,12 +101,6 @@ padding: 0;
     width: 96.6rem;
     height: 94.5rem;    
 }
-#arroba{
-    position: relative;
-    left: 0;
-    top: 0;
-    z-index: 10;
-}
 #arroba-box{    
     position: absolute;    
     top: 21rem;
@@ -115,60 +108,59 @@ padding: 0;
 }
 
 
-input[type=checkbox]{
-    display: none;
-}
-
-.dropdown{
+#overflow{
     position: relative;
+    overflow: hidden;  
+    width: auto;
+    height: 40rem;   
 }
-
-
-.flex-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 40rem;
-}
-.dropdown img{       
-   width: 1.2rem;
-   height: 1rem;
-}
-.dropdown p{
-    display: none;
-    max-width: 40rem;
-    color: var(--grayDarkBlue)    
-}
-.dropdown label{
-    color: var(--darkBlue)
-}
-
-.dropdown{
-    padding-top: .5rem;
-    padding-bottom: 1rem;
-    border-bottom: solid 2px var(--grayLightBlue);
-}
-
-input[type=checkbox]:checked ~ p {
-    display: block    
-}
-
-input[type=checkbox]:checked + div label {
-    font-weight: 700;
-}
-input[type=checkbox]:checked + div img {
-    transform: rotateX(180deg);
-}
-
 #faq{
     display: flex;
     flex-direction: column; 
     justify-content: flex-start;   
     padding: 10rem;        
 }
-
 #faq ul{
     padding: 0;    
+}
+
+
+.dropdown{
+    position: relative;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+    border-bottom: solid 2px var(--grayLightBlue);
+}
+.dropdown img{       
+    width: 1.2rem;
+    height: 1rem;
+ }
+ .dropdown p{
+     display: none;
+     max-width: 40rem;
+     color: var(--grayDarkBlue)    
+ }
+ .dropdown label{
+     color: var(--darkBlue)
+ }  
+ .flex-container{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 40rem;
+ }
+
+input[type=radio]{
+    display: none;
+}
+input[type=radio]:checked ~ p {
+    display: block    
+}
+input[type=radio]:checked + div label {
+    font-weight: 700;
+}
+input[type=radio]:checked + div img {
+    transform: rotateX(180deg);
 }
 
 .attribution{
