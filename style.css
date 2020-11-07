@@ -40,7 +40,7 @@ padding: 0;
      justify-content: center;
      flex-direction: column;
 }
-@media(max-width: 375px){
+@media(max-width: 400px){
     html{
         height: auto;
         background-color: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
@@ -74,7 +74,7 @@ padding: 0;
     top: 0;
     z-index: 10;
 }
-@media(max-width: 375px){
+@media(max-width: 400px){
     #arroba{
         z-index: 16;
     }
@@ -92,7 +92,7 @@ padding: 0;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 0rem 1.5rem 4rem 0rem  hsl(237, 12%, 33%);     
 }
-@media(max-width: 375px){
+@media(max-width: 400px){
     #principal{
         margin: 0;
         padding: 0;
@@ -109,7 +109,7 @@ padding: 0;
     position: relative;    
     max-height: 38rem;
 }
-@media(max-width: 375px){
+@media(max-width: 400px){
     #images{
         max-width: 30rem;
         height: 0;
@@ -125,7 +125,7 @@ padding: 0;
     height: 30rem;
     width: 45rem;               
 }
-@media(max-width: 375px){
+@media(max-width: 400px){
     #woman-online{
         top: -12rem;
         right: 0rem;
@@ -142,7 +142,7 @@ padding: 0;
     width: 96.6rem;
     height: 94.5rem;    
 }
-@media(max-width: 375px){
+@media(max-width: 400px){
     #shadow{
         width: 25rem;
         height: auto;
@@ -156,7 +156,7 @@ padding: 0;
     top: 21rem;
     right: 40rem;      
 }
-@media(max-width: 375px){
+@media(max-width: 400px){
     #arroba-box{    
         top: 10rem;
         right: 4rem;
@@ -172,7 +172,7 @@ padding: 0;
     width: auto;
     height: 40rem;   
 }
-@media(max-width: 375px){
+@media(max-width: 400px){
     #overflow{
         overflow: visible;
     }
@@ -183,7 +183,7 @@ padding: 0;
     justify-content: flex-start;   
     padding: 10rem;        
 }
-@media(max-width: 375px){
+@media(max-width: 400px){
     #faq{
         width: 100%;
         margin-top: 15rem;
@@ -205,7 +205,7 @@ padding: 0;
     padding-bottom: 1rem;
     border-bottom: solid 2px var(--grayLightBlue);
 }
-@media(max-width: 375px){
+@media(max-width: 400px){
     .dropdown{
         position: relative;
         padding-top: 0.5rem;
@@ -222,7 +222,7 @@ padding: 0;
      max-width: 40rem;
      color: var(--grayDarkBlue)    
  }
- @media(max-width: 375px){
+ @media(max-width: 400px){
     .dropdown p{
         padding: 1.5rem;
     }
@@ -236,7 +236,7 @@ padding: 0;
      align-items: center;
      width: 40rem;
  }
- @media(max-width: 375px){
+ @media(max-width: 400px){
     .flex-container{
         padding-right: 1.5rem;
         padding-left: 1.5rem;
