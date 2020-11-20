@@ -1,6 +1,6 @@
 :root {
     /** Fuentes **/ 
-    --principalFont: 'Kumbh Sans', sans-serif;     
+    --principalFont: 'Kumbh Sans', sans-serif;    
  
       
     /** Colores **/
@@ -21,14 +21,11 @@
      height: 100%;
      margin: 0;
      padding: 0;     
- }
- body
-{
-margin: 0;
-padding: 0;
-}
- body{ 
-     font-size: 16px;     
+ } 
+body{ 
+    margin: 0;
+    padding: 0;
+    font-size: 16px;     
      font-size: 1.6rem;     
      line-height: 2;
      font-family: var(--principalFont);
@@ -177,6 +174,10 @@ padding: 0;
         overflow: visible;
     }
 }
+
+label:hover{
+    cursor: pointer;
+}
 #faq{
     display: flex;
     flex-direction: column; 
@@ -197,8 +198,6 @@ padding: 0;
 #faq ul{
     padding: 0;    
 }
-
-
 .dropdown{
     position: relative;
     padding-top: .5rem;
@@ -243,7 +242,6 @@ padding: 0;
         width: 100%;
     }
 }
-
 input[type=radio]{
     display: none;
 }
@@ -256,7 +254,6 @@ input[type=radio]:checked + div label {
 input[type=radio]:checked + div img {
     transform: rotateX(180deg);
 }
-
 .attribution{
     font-size: 2rem ;
     padding: 1.5rem;
@@ -266,11 +263,3 @@ input[type=radio]:checked + div img {
     text-decoration: none;
     color: var(--white);
 }
-
-
-
-
-
-
-
-
