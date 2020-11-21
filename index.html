@@ -14,97 +14,71 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">s</script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">s</script> -->
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"/> 
   <link href="style.css" rel="stylesheet" />
 
 </head>
 <body>
-  <!-- this id functions as a parent for the most z-index high value image (the arroba box)-->
-  <div id="arroba">
-    <img id="arroba-box" src="images/illustration-box-desktop.svg" height="200" width="200"/>
-  </div>
-
-  <!--This is the white box in the design-->
-  <main id="principal">
-    
-    <div id="images">
-      <!-- Images -->
-      <div id="overflow">
-        <img id="woman-online"src="images/illustration-woman-online-desktop.svg" height="200" width="200"/>
+  <div class="principal-container">
+    <!-- this id functions as a parent for the most z-index high value image (the arroba box)-->
+    <div id="arroba"><img id="arroba-img"src="images/illustration-box-desktop.svg" alt="Logo."></div>
+    <!--This is the white box in the design-->
+    <main class="principal">    
+      <div class="images">
+        <!-- Images -->
+        <div id="woman-desktop"></div>
+        <div id="shadow"></div>  
       </div>
-      <img id="shadow" src="images/bg-pattern-desktop.svg" width="200" height="200"/>
 
+      <div class="faq">
+        <!-- FAQ text and menu-->      
+        <h1>FAQ</h1>
+        <ul>
+          <li>
+            <details>
+              <!-- This time I used the details and summary html tags to do the toggle-->            
+              <summary>How many team members can I invite?</summary>                                                               
+              <p>You can invite as much as you want! Go and tell your friends!</p>
+            </details>
+          </li>
+          <li> 
+            <details>
+              <summary>What is the maximum file upload size?</summary>  
+              <p>Today the maximum size we can store is 500 mb, but we are going to give more in the future!</p> 
+            </details>
+          </li>
+          <li>
+            <details>            
+              <summary>How do I reset my password?</summary>  
+              <p>Go to settings > security > password > change password. Follow the steps.</p>
+            </details>         
+          </li>
+          <li>
+            <details>            
+              <summary>Can I cancel my subscription?</summary>              
+              <p>Of course you can, just remember to cancel it before the 1st of every month.</p>
+            </details>         
+          </li>
+          <li>
+            <details>           
+              <summary>Do you provide additional support?</summary>             
+              <p>Yes, write us an email to support.frontend@mentor.com with all your issues</p>
+            </details>         
+          </li>
+        </ul>
+      </div>
+
+    </main>   
+
+    <!--My attribution-->
+    <div class="attribution">
+      <p>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/TheCyll">Hazel Gallegos</a>.
+      </p>
     </div>
-
-    <div id="faq">
-      <!-- FAQ text and menu-->
-      
-      <h1>FAQ</h1>
-
-      <ul>
-        <li>
-          <div class="dropdown">  
-            <!--I used the input type radio for the functionality :checked in css,
-            the only problem with this is that once you check one option you cannot
-            unchecked all of them, this can ve resolved with JS but my challenge was to do it without-->           
-            <input type="radio" id="checkbox_toggle1" name="all" value="checkbox_toggle1">
-            <div class="flex-container">
-              <label for="checkbox_toggle1">How many team members can I invite?</label>
-              <img class="drop-arrow" src="images/icon-arrow-down.svg"/> 
-            </div>                                      
-            <p>You can invite as much as you want! Go and tell your friends!</p>
-          </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <input type="radio" id="checkbox_toggle2" name="all" value="checkbox_toggle2">            <div class="flex-container">
-              <label for="checkbox_toggle2">What is the maximum file upload size?</label>
-              <img class="drop-arrow" src="images/icon-arrow-down.svg"/>
-            </div>
-            <p>Today the maximum size we can store is 500 mb, but we are going to give more in the future!</p>
-          </div>        
-        </li>
-        <li>
-          <div class="dropdown">
-            <input type="radio" id="checkbox_toggle3" name="all" value="checkbox_toggle3">            <div class="flex-container">
-              <label for="checkbox_toggle3">How do I reset my password?</label>
-              <img class="drop-arrow" src="images/icon-arrow-down.svg"/>
-            </div>
-            <p>Go to settings > security > password > change password. Follow the steps.</p>
-          </div>         
-        </li>
-        <li>
-          <div class="dropdown">
-            <input type="radio" id="checkbox_toggle4" name="all" value="checkbox_toggle4">            <div class="flex-container">
-              <label for="checkbox_toggle4">Can I cancel my subscription?</label>
-              <img class="drop-arrow" src="images/icon-arrow-down.svg"/>
-            </div>
-            <p>Of course you can, just remember to cancel it before the 1st of every month.</p>
-          </div>         
-        </li>
-        <li>
-          <div class="dropdown">
-            <input type="radio" id="checkbox_toggle5" name="all" value="checkbox_toggle5">            <div class="flex-container">
-              <label for="checkbox_toggle5">Do you provide additional support?</label>
-              <img class="drop-arrow" src="images/icon-arrow-down.svg"/>
-            </div>
-            <p>Yes, write us an email to support.frontend@mentor.com with all your issues</p>
-          </div>         
-        </li>
-      </ul>
-
-    </div>
-
-  </main>
-
-
-  <!--My attribution-->
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/TheCyll">Hazel Gallegos</a>.
-  </div>
-
-  <footer></footer>
+  </div>  
+  <script src="js/index.js"></script>
 </body>
 </html>
